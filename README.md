@@ -36,8 +36,9 @@ A lightweight, FastAPI-powered backend system that provides product recommendati
 ---
 
 ## 📸 Screenshots
+<img src="https://github.com/PrathameshPatil5/E-commerce-Shopsmart-API-Using-KNN-model/blob/main/screenshots/shopsmart-screenshot.jpg" height=1000>
 
-
+---
 
 ## 🛠️ Setup Instructions
 
@@ -57,6 +58,7 @@ conda activate shoppersmart
 ```bash
 pip install -r requirements.txt
 ```
+---
 
 ## 🧪 Run the App
 
@@ -65,6 +67,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 Visit: http://127.0.0.1:8000/docs to access Swagger UI
+---
 
 ## 📊 Recommendation Model (KNN)
 
@@ -80,6 +83,7 @@ python prepare_dataset.py
 ```bash
 python dummy_data_entry.py
 ```
+---
 
 ## 🔎 Example API Endpoints
 
@@ -90,9 +94,11 @@ python dummy_data_entry.py
 | /products/                       | GET    | Get all products              |
 | /transactions/                   | POST   | Create a transaction          |
 | /recommendations/{customer_id}   | GET    | Get product recommendations   |
+---
 
 ## 📁 Folder Structure
 
+```
 shoppersmart-api-knn/
 ├── main.py                         # FastAPI app entry point
 ├── db.py                           # Database engine, SessionLocal, Base
@@ -103,6 +109,9 @@ shoppersmart-api-knn/
 ├── knn_model.pkl                   # Pickled KNN model
 ├── user_item_matrix.pkl            # Saved user-item matrix for inference
 ├── transaction_dataset.csv         # Exported CSV of transaction history (for ML/data reuse)
+
+├── Screenshots/                    # Screenshot of UI and code sample
+│   └── shopsmart-screenshot
 
 ├── models/                         # SQLAlchemy ORM models
 │   ├── customer.py
@@ -120,6 +129,8 @@ shoppersmart-api-knn/
 
 ├── README.md                       # Project documentation (you’re working on this)
 └── .gitignore                      # (optional) Ignore .db, __pycache__, .pkl files, etc.
+```
+---
 
 
 
